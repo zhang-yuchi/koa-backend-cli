@@ -7,6 +7,15 @@ class testException extends HttpException{
     this.errorCode = errorCode||10000
   }
 }
+class Forbbiden extends HttpException{
+  constructor(msg,code,errorCode){
+    super()
+    this.msg = msg||"禁止进入",
+    this.code = code||403
+    this.errorCode = errorCode||10001
+  }
+}
 module.exports = {
-  testException
+  testException,
+  Forbbiden
 }

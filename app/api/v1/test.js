@@ -1,7 +1,7 @@
 const Router = require('koa-router')
 const { testValidator } = require('../../validators/validator')
 const { testException } = require('../../../core/httpException')
-const { Auth } = require('../../../middlewares/auth')
+const  Auth  = require('../../../middlewares/auth')
 const router = new Router({
   prefix:'/v1/test'
 })
